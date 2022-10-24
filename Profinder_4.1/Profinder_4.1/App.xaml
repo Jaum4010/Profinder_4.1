@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder_4._1.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="White">#FFFFFF</Color>
+            <Color x:Key="Black">#000000</Color>
+            <Color x:Key="Cor_Inicio">#9f6464</Color>
+            <Color x:Key="LightPurple">#9f64d4</Color>
+            <Color x:Key="GrayBlue">#F1F3F6</Color>
+            <Color x:Key="DarkGrayBlue">#B3BDC8</Color>
+
+            <Color x:Key="Gray">#8FA0AC</Color>
+            <Color x:Key="DarkGray">#4E5C69</Color>
+            <Color x:Key="LightGray">#CAD1DC</Color>
+
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="Padding" Value="15,15,15,0"/>
+                <Setter Property="NavigationPage.HasNavigationBar" Value="False"/>
+            </Style>
+
+            <Style TargetType="Frame" Class="EntryFrame">
+                <Setter Property="BackgroundColor" Value="{StaticResource GrayBlue}" />
+                <Setter Property="Padding" Value="10, 0"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="HasShadow" Value="False"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="Title">
+                <Setter Property="FontFamily" Value="MontserratBold"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="TextColor" Value="{StaticResource Cor_Inicio}"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="{StaticResource Black}" />
+                <Setter Property="PlaceholderColor" Value="{StaticResource DarkGrayBlue}" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="Montserrat" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource LightPurple}"/>
+                <Setter Property="TextColor" Value="{StaticResource White}"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="Montserrat" />
+            </Style>
+
+            <Style TargetType="ImageButton" x:Key="BackButton">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                
+                <Setter Property="HeightRequest" Value="20"/>
+                
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Source" Value="back.png"/>
+                
+            </Style>
+
+            <Style TargetType="ImageButton" x:Key="OkButton">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="WidthRequest" Value="29"/>
+                <Setter Property="HeightRequest" Value="10"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Source" Value="ok.png"/>
+            </Style>
+            <Style TargetType="Label" x:Key="MateriaCidadeLabel">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="Montserrat"/>
+                <Setter Property="TextColor" Value="{StaticResource Gray}"/>
+            </Style>
+            <Style TargetType="Label" x:Key="MateriaTitulo">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontFamily" Value="Montserrat"/>
+                <Setter Property="TextColor" Value="{StaticResource DarkGray}"/>
+            </Style>
+            <Style TargetType="Label" x:Key="IdLabel">
+                <Setter Property="FontSize" Value="8" />
+                <Setter Property="FontFamily" Value="Montserrat"/>
+                <Setter Property="TextColor" Value="{StaticResource Gray}"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+                
+            </Style>
+            
+            <!-- Icones -->
+
+            <Style TargetType="ImageButton" Class="SearchButton">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="Source" Value="search.png"/>
+                <Setter Property="WidthRequest" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+            </Style>
+
+            <Style TargetType="ImageButton" Class="PinButton">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="Source" Value="pin.png"/>
+                <Setter Property="WidthRequest" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

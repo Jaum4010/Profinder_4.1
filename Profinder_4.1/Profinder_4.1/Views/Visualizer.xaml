@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder_4._1.Views.Visualizer">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Style="{StaticResource BackButton}" Clicked="GoBack"/>
+                <Label Text="Profinder" Style="{StaticResource Title}" Grid.Column="1"/>
+            </Grid>
+            <BoxView Color="#D7CCa1" HeightRequest="1"/>
+            <ScrollView>
+                <StackLayout>
+            <Grid RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>                                       
+                </Grid.RowDefinitions>
+                <Label Text="Xadrez" Style="{StaticResource MateriaTitulo}"/>
+                <Label Text="SINOP-MT" Grid.Row="2" Style="{StaticResource MateriaCidadeLabel}"/>
+
+                <Label Grid.Row="0" Style="{StaticResource MateriaTitulo}" HorizontalOptions="End" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Pub. "/>
+                            <Span Text="20/10/2022"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Grid.Row="1" Style="{StaticResource IdLabel}" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="id. "/>
+                            <Span Text="23434"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+
+            <Label Text="Descrição" ></Label>
+                    <Label Text="Lorem ipsum dolor sit amet. Ad adipisci deserunt et galisum corporis aut consequatur eligendi ut voluptas omnis ut magni nihil non vero facere. Aut fugit rerum est laboriosam praesentium eum error vitae vel quia quisquam.
+
+Ab delectus iusto sit nobis voluptates est maxime corporis cum porro veritatis sit labore impedit rem laborum saepe. Ea magnam consectetur in sunt atque hic quae autem qui delectus quaerat qui eius alias? Et laudantium Quis sit consectetur explicabo ad omnis minima sed vero voluptas qui impedit fugiat.
+
+Eos temporibus voluptatem est autem galisum ab quis dolore a obcaecati blanditiis. Ut quod similique nam nostrum sunt id officia dolorem et facere nemo vel voluptatem sint ut sint nisi. Aut voluptatum optio non amet velit ut iste fugiat vel autem nihil."></Label>
+                </StackLayout>
+                
+            </ScrollView>
+            <Button Text="Entrar em contato" Grid.Column="1"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

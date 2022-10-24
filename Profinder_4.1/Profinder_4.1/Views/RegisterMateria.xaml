@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Profinder_4._1.Views.RegisterMateria">
+    <ContentPage.Content>
+        
+        <StackLayout Spacing="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Style="{StaticResource BackButton}" Clicked="GoBack"/>
+                <Label Text="Profinder" Style="{StaticResource Title}" Grid.Column="1"/>
+                <ImageButton Style="{StaticResource OkButton}" Grid.Column="2" Clicked="Save"/>
+
+            </Grid>
+            <BoxView Color="#D7CCa1" HeightRequest="1"/>
+            <ScrollView>
+                <StackLayout>
+                <Frame StyleClass="EntryFrame" Margin="0,50,0,0">
+                <Entry Placeholder="Matéria"/>
+            </Frame>
+
+            <Frame StyleClass="EntryFrame">
+                <Entry Placeholder="Cidade"/>
+
+            </Frame>
+
+            <Frame StyleClass="EntryFrame">
+                <Entry Placeholder="Descrição da Matéria"/>
+            </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
